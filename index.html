@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" <link
+        rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Delivery Prime</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="w-full h-[420px] bg-cover bg-center" style="background-image: url('./assents/bg\ delivery.png');">>
+        <div class="w-full h-full flex flex-col justify-center items-center text-center">
+            <img src="./assents/hamb-3.png" alt="logo"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 transition duration-200" />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white hover:scale-110 transition duration-200">
+                Delivery <span class="text-red-500">Prime</span>
+            </h1>
+
+            <span class="text-white font-medium">
+                Rua do Arame nº 188c, Jardim Uniao
+            </span>
+
+            <div class="bg-green-600 px-6 py-2 rounded-lg mt-5 flex items-center gap-2 hover:bg-green-500 transition duration-200"
+                id="date-span">
+                <i class="fa fa-clock text-white"></i>
+                <span class="text-white font-medium">Domingo à Sexta - 15:00 às 23:00</span>
+            </div>
+        </div>
+    </header>
+    <!--fim header-->
+
+    <h2 class="text-center text-2xl md:text-3xl font-bold mt-6 mb-6">
+        MENU
+    </h2>
+
+    <!--Menu-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto max-w-7xl">
+
+            <!--produto item-->
+            <div class="flex justify-between items-center gap-2 p-4 bg-white rounded-md shadow-md hover:bg-gray-400">
+                <img src="./assents/hamb-1.png" alt="Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200" />
+                <div class="flex-grow mx-4">
+                    <p class="font-bold">Smash</p>
+                    <p class="text-sm">descrição descrição descrição</p>
+                </div>
+                <div class="flex flex-col items-end">
+                    <p class="font-bold text-lg mb-2">R$ 18,50</p>
+                    <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Smash" data-price="18,50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!--fim produto item-->
+
+            <!--produto item-->
+            <div class="flex justify-between items-center gap-2 p-4 bg-white rounded-md shadow-md hover:bg-gray-400">
+                <img src="./assents/hamb-4.png" alt="Hamburguer simples"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200" />
+                <div class="flex-grow mx-4">
+                    <p class="font-bold">Hamburguer simples</p>
+                    <p class="text-sm">descrição descrição descrição</p>
+                </div>
+                <div class="flex flex-col items-end">
+                    <p class="font-bold text-lg mb-2">R$ 16,50</p>
+                    <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Hamburguer simples"
+                        data-price="16,50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!--fim produto item-->
+
+            <!--produto item-->
+            <div class="flex justify-between items-center gap-2 p-4 bg-white rounded-md shadow-md hover:bg-gray-400">
+                <img src="./assents/hamb-2.png" alt="Jc Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200" />
+                <div class="flex-grow mx-4">
+                    <p class="font-bold">Jc Burguer</p>
+                    <p class="text-sm">descrição descrição descrição</p>
+                </div>
+                <div class="flex flex-col items-end">
+                    <p class="font-bold text-lg mb-2">R$ 17,50</p>
+                    <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Jc Burguer"
+                        data-price="17,50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!--fim produto item-->
+
+            <!--produto item-->
+            <div class="flex justify-between items-center gap-2 p-4 bg-white rounded-md shadow-md hover:bg-gray-400">
+                <img src="./assents/hamb-3.png" alt="Duplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200" />
+                <div class="flex-grow mx-4">
+                    <p class="font-bold">Duplo</p>
+                    <p class="text-sm">descrição descrição descrição</p>
+                </div>
+                <div class="flex flex-col items-end">
+                    <p class="font-bold text-lg mb-2">R$ 18,50</p>
+                    <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Duplo" data-price="18,50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!--fim produto item-->
+
+
+
+
+        </main>
+        <div class="text-center text-2xl md:text-3xl font-bold mt-6 mb-6">
+            <h1>BEBIDAS</h1>
+        </div>
+
+        <!--grid bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto max-w-7xl" id="menu">
+
+            <!--produto item-->
+            <div class="flex justify-between items-center gap-2 p-4 bg-white rounded-md shadow-md hover:bg-gray-400">
+                <img src="./assents/refri-1.png" alt="Coca Cola"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200" />
+                <div class="flex-grow mx-4">
+                    <p class="font-bold">Coca Cola</p>
+
+                </div>
+                <div class="flex flex-col items-end">
+                    <p class="font-bold text-lg mb-2">R$ 7,50</p>
+                    <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Coca Cola"
+                        data-price="7,50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!--fim produto item-->
+
+            <!--produto item-->
+            <div class="flex justify-between items-center gap-2 p-4 bg-white rounded-md shadow-md hover:bg-gray-400">
+                <img src="./assents/refri-2.png" alt="Guarana"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200" />
+                <div class="flex-grow mx-4">
+                    <p class="font-bold">Guaraná</p>
+
+                </div>
+                <div class="flex flex-col items-end">
+                    <p class="font-bold text-lg mb-2">R$ 7,50</p>
+                    <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Guaraná" data-price="7,50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!--fim produto item-->
+
+        </div>
+        <!--Fim grid bebidas-->
+
+
+    </div>
+    <!--Fim Menu-->
+
+
+    <!--modal cart-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-6 rounded-lg shadow-lg min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-4">Meu Carrinho</h2>
+            <div id="cart-items" class="flex flex-col space-y-4 mb-4 "></div>
+            <p class="font-bold text-lg">Total: <span id="cart-total" class="text-red-500">0,00</span></p>
+            <div class="mt-6">
+                <p class="font-bold mb-2">Endereço de Entrega</p>
+                <input type="text" placeholder="Digite seu Endereço Completo..." id="address"
+                    class="w-full border-2 border-gray-300 p-2 rounded-lg focus:border-red-500 outline-none" />
+                <p class="text-red-500 hidden mt-1" id="address-warn">Digite Seu Endereço Completo!</p>
+            </div>
+            <div class="flex items-center justify-between mt-6">
+                <button id="close-modal-btn"
+                    class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg shadow-md transition duration-200  ">Fechar</button>
+                <button id="checkout-btn"
+                    class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow-md transition duration-200">Finalizar
+                    Pedido</button>
+
+                    
+   
+            </div>
+        </div>
+    </div>
+
+    </div><br>
+    <!--fim modal cart-->
+
+    
+
+     <!-- Alerta de pedido adicionado -->
+    <div id="alert"
+        class="fixed top-5 right-5 bg-green-500 text-black px-4 py-2 rounded-md shadow-md hidden">
+        😀 Pedido adicionado ao carrinho!
+    </div>
+
+    <!-- Alerta de restaurante fechado -->
+<div id="alert-modal" class="hidden fixed top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded shadow-lg z-50">
+    O estabelecimento está fechado. Funcionamos das 15:00 às 23:00.
+</div>
+
+<!-- Alerta de restaurante fechado quando adcionar ao carrinho-->
+<div id="closed-alert" class="hidden fixed top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded shadow-lg z-50">
+    O estabelecimento está fechado. Funcionamos das 15:00 às 23:00.
+</div>
+
+    <!-- Button cart footer -->
+    <footer class="w-full bg-red-500 py-1 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+
+            (<span id="cart-count">0</span>)
+            Ver Carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- Button cart footer -->
+
+ <!--footer-->
+ <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-5">
+        <div class="lg:flex">
+            <div class="w-full lg:w-2/3 lg:pr-24 mb-10 lg:mb-0">
+                <h3 class="text-2xl font-bold mb-5">Sobre Nós</h3>
+                <p class="text-justify">
+                    Delivery Prime: Sua Lanchonete Favorita ao Alcance de um Clique
+
+Bem-vindo à Delivery Prime, a lanchonete que traz até você os sabores irresistíveis que você ama, com a comodidade que você merece. Fundada com o objetivo de transformar a experiência de pedidos online, nossa missão é oferecer refeições deliciosas e entregas rápidas, sempre prezando pela qualidade e satisfação dos nossos clientes.
+                </p>
+            </div>
+
+            <div class="w-full lg:w-1/3">
+                <h3 class="text-2xl font-bold mb-5">Contato</h3>
+                <ul class="text-lg">
+                    <li class="mb-2"><i class="fa fa-phone"></i> (00) 1234-5678</li>
+                    <li class="mb-2"><i class="fa fa-envelope"></i> contato@deliveryprime.com.br</li>
+                    <li class="mb-2"><i class="fa fa-map-marker"></i> Rua do Arame nº 188c, Jardim Uniao</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--fim footer-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
