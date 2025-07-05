@@ -16,27 +16,27 @@
 
     <link rel="stylesheet" href="./styles/output.css" />
 
-    <title>Delivery Prime</title>
+    <title>Saborié</title>
 </head>
 
 <body>
     <!--header-->
     <header class="w-full h-[420px] bg-cover bg-center" style="background-image: url('./assents/bg\ delivery.png');">>
         <div class="w-full h-full flex flex-col justify-center items-center text-center">
-            <img src="./assents/hamb-3.png" alt="logo"
+            <img src="./assents/logo.png" alt="logo"
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 transition duration-200" />
             <h1 class="text-4xl mt-4 mb-2 font-bold text-white hover:scale-110 transition duration-200">
-                Delivery <span class="text-red-500">Prime</span>
+                Saborié <span class="text-red-500"></span>
             </h1>
 
             <span class="text-white font-medium">
-                Rua do Arame nº 188c, Jardim Uniao
+                Somente Delivery
             </span>
 
             <div class="bg-green-600 px-6 py-2 rounded-lg mt-5 flex items-center gap-2 hover:bg-green-500 transition duration-200"
                 id="date-span">
                 <i class="fa fa-clock text-white"></i>
-                <span class="text-white font-medium">Domingo à Sexta - 15:00 às 23:00</span>
+                <span class="text-white font-medium">Segunda a Quinta - 18:00 às 23:00</span>
             </div>
         </div>
     </header>
@@ -59,7 +59,7 @@
                     <p class="text-sm">descrição descrição descrição</p>
                 </div>
                 <div class="flex flex-col items-end">
-                    <p class="font-bold text-lg mb-2">R$ 18,50</p>
+                    <p class="font-bold text-base mb-1 text-green-600">R$ 18,50</p>
                     <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Smash" data-price="18,50">
                         <i class="fa fa-cart-plus text-lg text-white"></i>
                     </button>
@@ -76,7 +76,7 @@
                     <p class="text-sm">descrição descrição descrição</p>
                 </div>
                 <div class="flex flex-col items-end">
-                    <p class="font-bold text-lg mb-2">R$ 16,50</p>
+                    <p class="font-bold text-base mb-1 text-green-600">R$ 16,50</p>
                     <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Hamburguer simples"
                         data-price="16,50">
                         <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -94,7 +94,7 @@
                     <p class="text-sm">descrição descrição descrição</p>
                 </div>
                 <div class="flex flex-col items-end">
-                    <p class="font-bold text-lg mb-2">R$ 17,50</p>
+                    <p class="font-bold text-base mb-1 text-green-600">R$ 17,50</p>
                     <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Jc Burguer"
                         data-price="17,50">
                         <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -112,7 +112,7 @@
                     <p class="text-sm">descrição descrição descrição</p>
                 </div>
                 <div class="flex flex-col items-end">
-                    <p class="font-bold text-lg mb-2">R$ 18,50</p>
+                    <p class="font-bold text-base mb-1 text-green-600">R$ 18,50</p>
                     <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Duplo" data-price="18,50">
                         <i class="fa fa-cart-plus text-lg text-white"></i>
                     </button>
@@ -140,7 +140,7 @@
 
                 </div>
                 <div class="flex flex-col items-end">
-                    <p class="font-bold text-lg mb-2">R$ 7,50</p>
+                    <p class="ffont-bold text-base mb-1 text-green-600">R$ 7,50</p>
                     <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Coca Cola"
                         data-price="7,50">
                         <i class="fa fa-cart-plus text-lg text-white"></i>
@@ -158,7 +158,7 @@
 
                 </div>
                 <div class="flex flex-col items-end">
-                    <p class="font-bold text-lg mb-2">R$ 7,50</p>
+                    <p class="font-bold text-base mb-1 text-green-600">R$ 7,50</p>
                     <button class="bg-gray-900 px-5 py-2 rounded add-to-cart-btn" data-name="Guaraná" data-price="7,50">
                         <i class="fa fa-cart-plus text-lg text-white"></i>
                     </button>
@@ -174,33 +174,94 @@
     <!--Fim Menu-->
 
 
-    <!--modal cart-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
-        <div class="bg-white p-6 rounded-lg shadow-lg min-w-[90%] md:min-w-[600px]">
-            <h2 class="text-center font-bold text-2xl mb-4">Meu Carrinho</h2>
-            <div id="cart-items" class="flex flex-col space-y-4 mb-4 "></div>
-            <p class="font-bold text-lg">Total: <span id="cart-total" class="text-red-500">0,00</span></p>
-            <div class="mt-6">
-                <p class="font-bold mb-2">Endereço de Entrega</p>
-                <input type="text" placeholder="Digite seu Endereço Completo..." id="address"
-                    class="w-full border-2 border-gray-300 p-2 rounded-lg focus:border-red-500 outline-none" />
-                <p class="text-red-500 hidden mt-1" id="address-warn">Digite Seu Endereço Completo!</p>
-            </div>
-            <div class="flex items-center justify-between mt-6">
-                <button id="close-modal-btn"
-                    class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg shadow-md transition duration-200  ">Fechar</button>
-                <button id="checkout-btn"
-                    class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow-md transition duration-200">Finalizar
-                    Pedido</button>
+    <!-- ... (todo o restante acima permanece igual, até o modal do carrinho) -->
 
-                    
-   
-            </div>
+<!--modal cart-->
+<div
+  id="cart-modal"
+  class="bg-black/60 fixed top-0 left-0 z-[99] hidden w-full h-full flex items-center justify-center"
+>
+  <div
+    class="bg-white p-6 rounded-lg shadow-lg min-w-[90%] md:min-w-[600px] max-h-[90vh] flex flex-col"
+  >
+    <!-- Conteúdo rolável: adicionei overflow-y-auto e limite de altura -->
+    <div style="overflow-y:auto; max-height:75vh;">
+      <h2 class="text-center font-bold text-2xl mb-4">Meu Carrinho</h2>
+      <div id="cart-items" class="flex flex-col space-y-4 mb-4"></div>
+      <p class="font-bold text-lg">Total: <span id="cart-total" class="text-red-500">0,00</span></p>
+
+      <!-- Nome do cliente -->
+      <div class="mt-6">
+        <p class="font-bold mb-2">Seu Nome</p>
+        <input
+          type="text"
+          placeholder="Digite seu nome completo..."
+          id="client-name"
+          class="w-full border-2 border-gray-300 p-2 rounded-lg focus:border-red-500 outline-none"
+        />
+        <p class="text-red-500 hidden mt-1" id="name-warn">Digite seu nome!</p>
+      </div>
+      <!--Fim nome cliente-->
+
+      <!-- Endereço -->
+      <div class="mt-6">
+        <p class="font-bold mb-2">Endereço de Entrega</p>
+        <input
+          type="text"
+          placeholder="Rua / Avenida"
+          id="address"
+          class="w-full border-2 border-gray-300 p-2 rounded-lg focus:border-red-500 outline-none mb-2"
+        />
+        <input
+          type="text"
+          placeholder="Número"
+          id="address-number"
+          class="w-full border-2 border-gray-300 p-2 rounded-lg focus:border-red-500 outline-none mb-2"
+        />
+        <input
+          type="text"
+          placeholder="Complemento (opcional)"
+          id="address-complement"
+          class="w-full border-2 border-gray-300 p-2 rounded-lg focus:border-red-500 outline-none"
+        />
+        <p class="text-red-500 hidden mt-1" id="address-warn">Preencha o endereço e o número!</p>
+      </div>
+
+      <!-- Pagamento -->
+      <div class="mt-6">
+        <p class="font-bold mb-2">Forma de Pagamento</p>
+        <div class="flex flex-col gap-2">
+          <label><input type="radio" name="payment-option" value="PIX" /> PIX</label>
+          <label><input type="radio" name="payment-option" value="Cartão" /> Cartão</label>
+          <label><input type="radio" name="payment-option" value="Dinheiro" /> Dinheiro</label>
         </div>
+        <p class="text-red-500 hidden mt-1" id="payment-warn">Selecione uma forma de pagamento!</p>
+      </div>
     </div>
 
-    </div><br>
-    <!--fim modal cart-->
+    <!-- Botões fixos abaixo do conteúdo rolável -->
+    <div class="flex items-center justify-between mt-6">
+      <button
+        id="close-modal-btn"
+        class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg shadow-md transition duration-200"
+      >
+        Fechar
+      </button>
+      <button
+        id="checkout-btn"
+        class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow-md transition duration-200"
+      >
+        Finalizar Pedido
+      </button>
+    </div>
+  </div>
+</div>
+<!--fim modal cart-->
+
+
+
+<!-- ... restante do HTML continua igual -->
+
 
     
 
@@ -238,9 +299,9 @@
             <div class="w-full lg:w-2/3 lg:pr-24 mb-10 lg:mb-0">
                 <h3 class="text-2xl font-bold mb-5">Sobre Nós</h3>
                 <p class="text-justify">
-                    Delivery Prime: Sua Lanchonete Favorita ao Alcance de um Clique
+                    Saborié: Sua Lanchonete Favorita ao Alcance de um Clique
 
-Bem-vindo à Delivery Prime, a lanchonete que traz até você os sabores irresistíveis que você ama, com a comodidade que você merece. Fundada com o objetivo de transformar a experiência de pedidos online, nossa missão é oferecer refeições deliciosas e entregas rápidas, sempre prezando pela qualidade e satisfação dos nossos clientes.
+Bem-vindo à Saborié, a lanchonete que traz até você os sabores irresistíveis que você ama, com a comodidade que você merece. Fundada com o objetivo de transformar a experiência de pedidos online, nossa missão é oferecer refeições deliciosas e entregas rápidas, sempre prezando pela qualidade e satisfação dos nossos clientes.
                 </p>
             </div>
 
@@ -248,8 +309,8 @@ Bem-vindo à Delivery Prime, a lanchonete que traz até você os sabores irresis
                 <h3 class="text-2xl font-bold mb-5">Contato</h3>
                 <ul class="text-lg">
                     <li class="mb-2"><i class="fa fa-phone"></i> (00) 1234-5678</li>
-                    <li class="mb-2"><i class="fa fa-envelope"></i> contato@deliveryprime.com.br</li>
-                    <li class="mb-2"><i class="fa fa-map-marker"></i> Rua do Arame nº 188c, Jardim Uniao</li>
+                    <li class="mb-2"><i class="fa fa-envelope"></i> contato@saborié.com.br</li>
+                    <li class="mb-2"><i class="fa fa-map-marker"></i> Somente Delivery</li>
                 </ul>
             </div>
         </div>
